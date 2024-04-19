@@ -24,6 +24,9 @@ sync_apps() {
     echo "Syncing ${APP} to workspace, please wait..."
     rsync --remove-source-files -rlptDu /${APP}/ /workspace/${APP}/
 
+    echo "Syncing models to workspace, please wait..."
+    rsync --remove-source-files -rlptDu /hub/ /workspace/hub/
+
     echo "${TEMPLATE_VERSION}" > ${DOCKER_IMAGE_VERSION_FILE}
     echo "${VENV_PATH}" > "/workspace/${APP}/venv_path"
 }

@@ -34,6 +34,7 @@ RUN source /venv/bin/activate && \
 
 # Download models
 COPY instantstyle/* ./
+ENV HF_HOME="/"
 RUN source /venv/bin/activate && \
     python3 download_models.py && \
     deactivate
