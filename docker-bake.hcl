@@ -42,7 +42,7 @@ target "default" {
         INDEX_URL = "https://download.pytorch.org/whl/cu${CU_VERSION}"
         TORCH_VERSION = "${TORCH_VERSION}+cu${CU_VERSION}"
         XFORMERS_VERSION = "0.0.25.post1+cu${CU_VERSION}"
-        INSTANTSTYLE_COMMIT = "efe26d2f3a8d16b597cfa5c8f234bc8ad72bdbcb"
+        INSTANTSTYLE_COMMIT = "e6a2689957c28825412f829f8088353dab9769ad"
         VENV_PATH = "/workspace/venvs/${APP}"
     }
 }
