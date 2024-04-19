@@ -32,6 +32,12 @@ RUN source /venv/bin/activate && \
     pip3 install -r gradio_demo/requirements.txt --extra-index-url https://download.pytorch.org/whl/cu118 && \
     deactivate
 
+# Download models
+COPY instantstyle/* ./
+RUN source /venv/bin/activate && \
+    python3 download_models.py && \
+    deactivate
+
 # Remove existing SSH host keys
 RUN rm -f /etc/ssh/ssh_host_*
 
