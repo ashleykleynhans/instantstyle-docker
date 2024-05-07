@@ -14,8 +14,8 @@
 * Python 3.10.12
 * [InstantStyle](
   https://github.com/InstantStyle/InstantStyle)
-* Torch 2.2.2
-* xformers 0.0.25.post1
+* Torch 2.3.0
+* xformers 0.0.26.post1
 * Jupyter Lab
 * [runpodctl](https://github.com/runpod/runpodctl)
 * [OhMyRunPod](https://github.com/kodxana/OhMyRunPod)
