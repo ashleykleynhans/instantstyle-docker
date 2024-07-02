@@ -10,7 +10,7 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "1.2.0"
+    default = "1.3.0"
 }
 
 variable "CU_VERSION" {
@@ -22,7 +22,7 @@ variable "BASE_IMAGE_REPOSITORY" {
 }
 
 variable "BASE_IMAGE_VERSION" {
-    default = "1.4.0"
+    default = "1.7.0"
 }
 
 variable "CUDA_VERSION" {
@@ -43,6 +43,5 @@ target "default" {
         TORCH_VERSION = "${TORCH_VERSION}+cu${CU_VERSION}"
         XFORMERS_VERSION = "0.0.26.post1"
         INSTANTSTYLE_COMMIT = "e6a2689957c28825412f829f8088353dab9769ad"
-        VENV_PATH = "/workspace/venvs/${APP}"
     }
 }
